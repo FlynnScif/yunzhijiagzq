@@ -2,8 +2,19 @@
 import os
 import sae
 import web
-from hello import hello 
 
 
+urls = ("/","hello",
+        )
 
-application = sae.create_wsgi_app(wsgi.application)
+app_root = os.path.dirname(__file__)
+templates_root = os.path.join(app_root,'templates')
+render = web.template.render(templates_root)
+
+class hello:
+	def GET(self):
+		return rednder.index()
+
+app = web.application(urls,globals()).wsgifunc()
+
+application = sae.create_wsgi_app(app)
