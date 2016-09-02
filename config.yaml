@@ -1,6 +1,6 @@
-#comfig.yaml
 name: yunzhijiagzq
 version: 1
-libraties:
+
+libraries:
 - name: webpy
-  version:"0.36"
+  version: "0.36"
