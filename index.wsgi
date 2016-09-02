@@ -3,6 +3,7 @@ import os
 import sae
 import web
 from hello import hello 
+from wsucai import wsgi
 
 urls = ("/","hello",
         )
