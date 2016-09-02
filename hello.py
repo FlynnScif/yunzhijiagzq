@@ -2,8 +2,7 @@
 import web
 from web.contrib.template import render_jinja #web.py对调用jinja2的模块
 
-urls = ("/","hello",
-        )
+
 
 
 
